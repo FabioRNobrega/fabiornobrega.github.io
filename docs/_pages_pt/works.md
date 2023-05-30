@@ -22,20 +22,25 @@ works:
         image: works/arduino.jpg
       - title: The Journey Unseen
         description: Esse é o repositorio para o projeto The Journey Unseen. 
-        continue: See More 
+        continue: Veja Mais 
         url: https://github.com/FabioRNobrega/The-Journey-Unseen
         image: works/arduino.jpg
       - title: Desculpe, eu estava ocupada...
         description: Esse é o repositorio para o projeto  Desculpe, eu estava ocupada... 
-        continue: See More 
+        continue: Veja Mais 
         url: https://github.com/FabioRNobrega/Led-LDR-with-buzzer
+        image: works/arduino.jpg
+      - title: Portfólio Arte Digital
+        description: Esse é um portifólio com algumas obras elaboradas por mim. 
+        continue: Veja Mais 
+        url: http://127.0.0.1:3000/pt/portfolio-arte-digital/
         image: works/arduino.jpg
   - type: 
     title: Games
     collection: 
       - title: Memory
         description: Esse é um game desenvolvido em Unity com o objetivo de aprender como o mesmo funciona
-        continue: See More 
+        continue: Veja Mais 
         url: https://github.com/FabioRNobrega/memory
         image: works/unity.jpeg
 ---
