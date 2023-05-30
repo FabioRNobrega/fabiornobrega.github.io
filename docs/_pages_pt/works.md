@@ -33,7 +33,7 @@ works:
       - title: Portfólio Arte Digital
         description: Esse é um portifólio com algumas obras elaboradas por mim. 
         continue: Veja Mais 
-        url: http://127.0.0.1:3000/pt/portfolio-arte-digital/
+        url: https://fabiornobrega.github.io/pt/portfolio-arte-digital/
         image: works/arduino.jpg
   - type: 
     title: Games
