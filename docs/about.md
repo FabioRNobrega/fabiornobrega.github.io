@@ -15,6 +15,7 @@ time_line:
         description: In this new opportunity, I'm able to work really deep on finances and improve my skills in functional programming with Elixir.
         technologies_used_title: Technologies Used
         technologies_used:
+        -  name: Go
         -  name: Elixir
         -  name: Grafana
         -  name: Prometheus
