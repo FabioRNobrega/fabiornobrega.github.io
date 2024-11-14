@@ -16,6 +16,8 @@ time_line:
         description: In this new opportunity, I'm able to work really deep on finances and improve my skills in functional programming with Elixir.
         technologies_used_title: Technologies Used
         technologies_used:
+        -  name: .NET
+        -  name: Go
         -  name: Elixir
         -  name: Grafana
         -  name: Prometheus
@@ -111,4 +113,8 @@ time_line:
 ---
 
 
-Sou desenvolvedor front-end de sistemas web com HTML, CSS e JavaScript. Atualmente uso a framework Vue.JS com Nuxt.Js e tenho experiência com back-end em Ruby on Rails e Node.Js ( com TypeORM). Iniciei minha jornada na Universidade Federal do Rio de Janeiro cursando Gravura e comecei a frequentar aulas de Ciência da Computação , onde passei a fazer parte da empresa júnior de computação, EJCM . Onde tive experiências com desenvolvimento mobile para android e IOS, como também tive a oportunidade de gerenciar um projeto de software desda priorização até a execução final . Trabalhei também na lemoney como desenvolvedor me aprofundando cada vez mais em boas práticas de programação e resolvendo desafios do mercado de cashback. Atualmente estou atuando como backend com Elixir na Stone fintech de pagamentos e conta bancária. 
+Sou um desenvolvedor de software com pós-graduação em Engenharia de Software pela [PUC Minas](https://www.pucminas.br/pos-graduacao/iec/Paginas/default.aspx) (2023). Sou especializado no desenvolvimento de sistemas web e atualmente trabalho com Go lang. Tenho experiência em Ruby on Rails, Node.JS (com TypeORM), Go, .NET e Elixir no backend. E Vue.Js, Angular e Ionic no frontend. Minha jornada começou na Universidade Federal do Rio de Janeiro ([UFRJ](https://eba.ufrj.br)), onde estudei Gravura e fiz disciplinas de Ciência da Computação. Durante esse período, ingressei na empresa júnior de computação, [EJCM](https://ejcm.com.br), onde adquiri experiência em desenvolvimento mobile para Android e iOS e tive a oportunidade de gerenciar um projeto desde a priorização de software até a execução final.
+
+Na [lemoneyway](https://lemoneyway.com/en/), trabalhei como desenvolvedor, aprofundando meu conhecimento em boas práticas de programação e enfrentando desafios no mercado de cashback. Também colaborei com o Museu da Computação da UFRJ e ocasionalmente criei projetos para Arduino. Atualmente, trabalho como desenvolvedor backend com Elixir/Go/.NET na [Stone](https://www.stone.co/br/), focando em soluções fintech para pagamentos e contas bancárias, ajudando a equipe de Gerenciamento de Identidade.
+
+Confira abaixo minha linha do tempo completa de experiências profissionais.
