@@ -15,6 +15,7 @@ time_line:
         description: In this new opportunity, I'm able to work really deep on finances and improve my skills in functional programming with Elixir.
         technologies_used_title: Technologies Used
         technologies_used:
+        -  name: .NET
         -  name: Go
         -  name: Elixir
         -  name: Grafana
@@ -110,8 +111,8 @@ time_line:
         -  name: WordPress (HTML and CSS)
 ---
 
-  I am a software developer with a postgraduate degree in Software Engineering from [PUC Minas](https://www.pucminas.br/pos-graduacao/iec/Paginas/default.aspx) (2023). I specialize in developing web systems, and I currently work with Go lang. I have experience with Ruby on Rails, Node.JS (with TypeORM), Go and Elixir on the backend. And Vue.Js e Ionic on frontend. My journey began at the Federal University of Rio de Janeiro ([UFRJ](https://eba.ufrj.br)), where I studied Engraving  and took classes in Computer Science. During this time, I joined the junior computer enterprise, [EJCM](https://ejcm.com.br), where I gained experience in mobile development for Android and iOS and had the opportunity to manage a project from software prioritization to final execution.
+  I am a software developer with a postgraduate degree in Software Engineering from [PUC Minas](https://www.pucminas.br/pos-graduacao/iec/Paginas/default.aspx) (2023). I specialize in developing web systems, and I currently work with Go lang. I have experience with Ruby on Rails, Node.JS (with TypeORM), Go, .NET and Elixir on the backend. And Vue.Js, Angular e Ionic on frontend. My journey began at the Federal University of Rio de Janeiro ([UFRJ](https://eba.ufrj.br)), where I studied Engraving  and took classes in Computer Science. During this time, I joined the junior computer enterprise, [EJCM](https://ejcm.com.br), where I gained experience in mobile development for Android and iOS and had the opportunity to manage a project from software prioritization to final execution.
 
-  At [lemoneyway](https://lemoneyway.com/en/), I worked as a developer, deepening my understanding of good programming practices and tackling challenges in the cashback market. I also collaborated with the Computer Science Museum at UFRJ and occasionally created projects for Arduino. Currently, I work as a backend developer with Elixir/Go at Stone, focusing on fintech solutions for payments and bank accounts.
+  At [lemoneyway](https://lemoneyway.com/en/), I worked as a developer, deepening my understanding of good programming practices and tackling challenges in the cashback market. I also collaborated with the Computer Science Museum at UFRJ and occasionally created projects for Arduino. Currently, I work as a backend developer with Elixir/Go/.NET at Stone, focusing on fintech solutions for payments and bank accounts, helping the Identity Manager Team.
 
  Take a look at my full job timeline below
