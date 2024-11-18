@@ -14,17 +14,15 @@
         {% endif %}
         <div class="card__hide---expand"></div>
         <div class="card__body">
-            <div>
-                <h3 class="card__title">
+            <div class="card__title">
+                <h3>
                     {{ prop.title }}
                 </h3>
             </div>
-            <div>
-                <p class="card__text">
-                    {{ prop.description }}
-                </p>
+            <div class="card__text">
+                {{ prop.description }}
             </div>
-            <div>
+            <div class="card__footer">
                 <time class="card__date--published">
                     {% if prop.date %}
                       <i class="fas fa-calendar-alt"></i> {% include i18n/date date=prop.date format="short" %}

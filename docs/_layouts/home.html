@@ -46,11 +46,13 @@
           <h2 class="home__title">
             {{ page.recent-posts.title }}
           </h2>
-          {% for post in site[posts_collection]  limit:3%}
-            <div class="card-link">
-              {% include card.html type=post %}
-            </div>
-          {% endfor %}
+          <div class="home__posts--card">
+              {% for post in site[posts_collection]  limit:3%}
+                <div class="card-link">
+                  {% include card.html type=post %}
+                </div>
+              {% endfor %}
+          </div>
         </div>
       </section>
 

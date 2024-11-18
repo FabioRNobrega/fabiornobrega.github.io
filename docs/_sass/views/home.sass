@@ -42,14 +42,12 @@
 
   &__posts
     background-color: var(--lighter-background-color)
+
     &--card
-      max-width: 300px
       display: flex
-      @include tablets-and-up
+
+      @include mobile-and-down
         @include display-col
-        border: solid 1px var(--primary-color)
-        padding: 10px 20px
-        border-radius: 4px
 
       a
         text-decoration: none

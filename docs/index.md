@@ -5,7 +5,7 @@ description: My welcome page
 read_time: read
 about-me: 
   title: Welcome to my thoughts
-  body:  I am a software developer of web systems with HTML, CSS and JavaScript. I currently use a Vue.JS framework with Nuxt.Js and I have experience with Ruby on Rails and Node.JS (with TypeORM) on backend. I started my journey at the Federal University of Rio de Janeiro studying Engraving UFRJ. I also take classes in Computer Science, where I became part of the junior computer enterprise, EJCM. Where I had experiences with mobile development for android and IOS, as well as the opportunity to manage a project from software prioritization to final execution. At lemoneyway I work as a developer getting deeper and deeper into good programming practices and solving challenges in the cashback market. And I m collaboration on Computer Science museum from UFRJ. To time to time i create some projects for arduino. I'm currently working as a backend with Elixir at Stone fintech for payments and bank accounts.
+  body:  I am a software developer with a postgraduate degree in Software Engineering from PUC Minas (2023). I specialize in developing web systems, and I currently work with Go lang. I have experience with Ruby on Rails, Node.JS (with TypeORM), Go, .NET and Elixir on the backend. And Vue.Js, Angular e Ionic on frontend. My journey began at the Federal University of Rio de Janeiro (UFRJ), where I studied Engraving and took classes in Computer Science. During this time, I joined the junior computer enterprise, EJCM, where I gained experience in mobile development for Android and iOS and had the opportunity to manage a project from software prioritization to final execution.At lemoneyway, I worked as a developer, deepening my understanding of good programming practices and tackling challenges in the cashback market. I also collaborated with the Computer Science Museum at UFRJ and occasionally created projects for Arduino. Currently, I work as a backend developer with Elixir/Go/.NET at Stone, focusing on fintech solutions for payments and bank accounts, helping the Identity Manager Team.
 how-can-i-help-you: 
   title: How can I help you?
   body: As a software developer, I love to create new stuff. My career is mostly in web development. I all so do a lot of electronic art with Arduino and digital art in general.Put simply I can help you transform ideas on paper into reality. 
@@ -17,9 +17,9 @@ recent-posts:
 featured-articles:
   title: Feature Articles
   data: 
-    - title: Welcome to Jekill
-      description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-      url: jekyll/2021/05/31/welcome-to-jekyll/
+    - title: Welcome to Postgres!
+      description: PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.
+      url: postgres/2022/04/16/welcome-to-postgres/
 explore-more: 
   title: "Explore more on this site"
 

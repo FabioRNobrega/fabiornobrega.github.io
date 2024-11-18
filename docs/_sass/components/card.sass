@@ -22,6 +22,7 @@
   @include display-col
   @include tablets-and-down
     min-height: 300px
+    margin-bottom: 30px
 
   &__section
     &--title
@@ -34,14 +35,14 @@
     color: var(--primary-color)
 
   &__text
-    max-width: 380px
-    height: 50%
     line-height: 1.25
     overflow: hidden
+    max-height: 98px
     text-overflow: ellipsis
     padding: 0px 15px
     color: var(--text-color)
-    text-align: normal
+    text-align: left
+
   img
     overflow: hidden
     background-color: var(--lighter-background-color)
@@ -50,13 +51,17 @@
     object-fit: cover
     position: relative
     transition: all ease 0.5s
+
+  &__footer
+    @include display-row
+    justify-content: space-between
+    padding: 0px 15px
+    margin-top: 15px
+
   &__read
     &--more
       text-decoration: none
       color: var(--primary-color)
-      position: absolute
-      right: 15px
-      bottom: 15px
       &:hover
         color: var(--text-color)
 
@@ -64,6 +69,3 @@
     &--published
       text-decoration: none
       color: var(--text-color)
-      position: absolute
-      left: 15px
-      bottom: 15px
