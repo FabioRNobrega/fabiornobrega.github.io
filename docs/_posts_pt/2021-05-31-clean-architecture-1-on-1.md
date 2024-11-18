@@ -38,4 +38,4 @@ Robert finalizar esse primeiro capítulo tando um pequena opção de como fazer 
 
 Para finalizarmos o resumo deste capítulo, **“apenas lembre-se que: se a arquitetura vier por último, então o sistema ficará cada vez mais caro para desenvolver e, por fim, a mudança será praticamente impossível para parte ou para todo o sistema. Se for permitido que isso aconteça, significa que a equipe de desenvolvimento de software não lutou o suficiente pelo que sabiam que era necessário.”**
 
-Sendo assim é importante nesse primeiro capítulo entendermos que arquitetura é algo abstrato, de alto nível e que precisamos estar alicerçados nela antes de começar o projeto e também durante o mesmo. Sendo algo que é código e também negócio.
+Sendo assim é importante nesse primeiro capítulo entendermos que arquitetura é algo abstrato, de alto nível e que precisamos estar alicerçados nela antes de começar o projeto e também durante o mesmo. Sendo algo que é código e também negócio. Para ficar ligado em mais posts como esse considere assinar nosso [feed]({{site.url}}/feed.xml).

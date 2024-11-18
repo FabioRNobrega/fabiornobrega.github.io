@@ -1,7 +1,5 @@
 ---
 ---
-
-
 {% include i18n/i18n %}
 
 <!DOCTYPE html>
@@ -18,24 +16,27 @@
         <div class="page-header">
           <h1 class="posts-list__title">{{ page.title }}</h1>
         </div>
-  
-        <div style="margin-top: 20px;">
-          <h4> {{ page.filter }}: </h4>
-        </div>
-  
-        <section style="text-align: center; margin-bottom: 50px;">
-          <button id="all" class="posts-list__tags--item" onClick="getCategory(this.id)"> <i class="fas fa-tag"> </i> {{ page.all }} </button>
-          {% for categories in site.categories %}
-          <button id="{{ categories[0] | slugify }}" class="posts-list__tags--item" onClick="getCategory(this.id)"> <i class="fas fa-tag"> </i> {{ categories[0] }} </button>
-          {% endfor %}
-        </section>
+
+       
+        <!-- 
+          <div style="margin-top: 20px;">
+            <h4> {{ page.filter }}: </h4>
+          </div>
+    
+          <section style="text-align: center; margin-bottom: 50px;">
+            <button id="all" class="posts-list__tags--item" onClick="getCategory(this.id)"> <i class="fas fa-tag"> </i> {{ page.all }} </button>
+            {% for categories in site.categories %}
+            <button id="{{ categories[0] | slugify }}" class="posts-list__tags--item" onClick="getCategory(this.id)"> <i class="fas fa-tag"> </i> {{ categories[0] }} </button>
+            {% endfor %}
+          </section>
+        -->
   
         {% for post in site[posts_collection] %}
         <div id="filter" class="{{ post.categories }} display-none all">
             {% include post-card.html %}
         </div>
+        {% endfor %}
       </section>
-      {% endfor %}
     </main>
     
   {% include footer.html %}
