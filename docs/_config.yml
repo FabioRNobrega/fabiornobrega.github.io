@@ -74,11 +74,11 @@ pwa:
 locales:
   default:
     baseurl: ""
-    name: 🇺🇸
+    name: <img class="lang-switcher__flag" src="https://fabiornobrega.github.io/assets/images/icons/usa-icon.png" />
     lang: en-US
   pt:
     baseurl: /pt
-    name: 🇧🇷
+    name:   <img class="lang-switcher__flag" src="https://fabiornobrega.github.io/assets/images/icons/br-icon.png" />
     lang: pt-PT
 
 collections:

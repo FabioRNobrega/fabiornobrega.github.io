@@ -1,14 +1,13 @@
 @import "../_variables"
 @import "../_mixins"
 
-
 .time-line
   line-height: 1.5rem
 
-  hr 
+  hr
     margin: 50px 0
 
-  &__company 
+  &__company
     img
       width: 56px
       height: 56px
@@ -19,7 +18,7 @@
       font-family: var(--font-family-title)
 
   &__icon
-    &::before 
+    &::before
       width: 12px
       height: 12px
       border-radius: 50%
@@ -29,16 +28,16 @@
       top: 1px
       margin-top: 5px
       border: solid 4px var(--primary-color)
-  
+
   &__line
     &::before
-    content: "  "
-    position: relative
-    height: calc(100% - 22px)
-    min-height: calc(60px - 22px)
-    left: 7px
-    width: 4px
-    background-color: var(--primary-color)
+      content: " "
+      position: relative
+      height: calc(100% - 22px)
+      min-height: calc(60px - 22px)
+      left: 7px
+      width: 4px
+      background-color: var(--primary-color)
 
   &__title
     &--role
@@ -56,15 +55,11 @@
     ol
       margin-top: 10px
       list-style-position: inside
-      li 
+      li
         margin: 10px 0
-  
-
-        
 
 .row
   @include display-row
 
-.column 
+.column
   @include display-col
-  

@@ -1,15 +1,15 @@
 @import "../_variables"
 @import "../_mixins"
 
-
 .lang-switcher
   @include display-row
   @include tablets-and-down
     justify-content: space-around
     align-items: center
 
-  &__flag 
+  &__flag
     margin-left: 5px
-    font-size: 20px
+    margin-bottom: -20%
+    width: 30px
     @include tablets-and-down
-      font-size: 30px
+      width: 50px

@@ -2,6 +2,9 @@
 
 Esse projeto é o meu site pessoal ele foi desenvolvido com [jekyll](https://jekyllrb.com/) .
 
+> Ultima configuração estável:  `ruby 2.7.3` | `gem 3.3.2`
+>
+
 
 Tabela de Conteudo
 =================

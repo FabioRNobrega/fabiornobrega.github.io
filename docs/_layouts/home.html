@@ -74,35 +74,33 @@
         </div>
       </section>
 
-        <section class="home__explore">
-          <div class="base-container">
-            <h2 class="home__title">
-              {{ page.explore-more.title }}
-            </h2>
-            <div class="home__explore">
-            {% assign current_url = page.url %}
-            {% assign pages_collection = "pages" | append: page.collection_suffix %}
-            {% assign pages = site[pages_collection] %}
-            {% for document_id in site.navigation %}
-              {% for page in pages %}
-                {% include i18n/document_id obj=page %}
-                {% if obj_document_id == document_id %}
-                  <div class="home__explore--card">
-                    <a href="{{ page.url | prepend: site.baseurl }}" {% if page.url == current_url %}aria-current="page"{% endif %}>
-                      <h4> {{ page.title | escape }} </h4>
-                      <hr style="margin-bottom: 10px;">
-                      <div>
-                        {{ page.description | escape }}
-                      </div>
-                    </a>
+      <section class="base-container">
+        <h2 class="home__title">
+          {{ page.explore-more.title }}
+        </h2>
+        <div class="home__explore">
+        {% assign current_url = page.url %}
+        {% assign pages_collection = "pages" | append: page.collection_suffix %}
+        {% assign pages = site[pages_collection] %}
+        {% for document_id in site.navigation %}
+          {% for page in pages %}
+            {% include i18n/document_id obj=page %}
+            {% if obj_document_id == document_id %}
+              <div class="home__explore--card">
+                <a href="{{ page.url | prepend: site.baseurl }}" {% if page.url == current_url %}aria-current="page"{% endif %}>
+                  <h4> {{ page.title | escape }} </h4>
+                  <hr style="margin-bottom: 10px;">
+                  <div>
+                    {{ page.description | escape }}
                   </div>
-                  {% break %}
-                {% endif %}
-                {% endfor %}
-              {% endfor %}
-            </div>
-          </div>
-        </section>
+                </a>
+              </div>
+              {% break %}
+            {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </section>
       </div>
     </div>
   </main>
