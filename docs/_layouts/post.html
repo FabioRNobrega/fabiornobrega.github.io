@@ -23,7 +23,9 @@
             </h1>
             <p class="base-date" style="text-indent: 0;">{% include i18n/date date=page.date format="full" %}</p>
             <p style="text-indent: 0;"> <i class="fas fa-clock mr"></i>{% include readtime.html content=page.content read_time=page.read_time %}</p>
-          {{ content }}
+            <div class="post__article--content">
+              {{ content }}
+            </div>  
       
       
       

@@ -59,6 +59,25 @@
       font-size: 35px
       color: var(--primary-color)
 
+    &--content
+      p:first-of-type
+        text-indent: 0
+      p:first-of-type::first-letter
+        color: var(--primary-color)
+        font-family: var(--font-family-title)
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        position: relative
+        top: 4px
+        float: left
+        margin: 0px 10px -10px 0
+        padding: 0
+        height: 52px
+        line-height: 52px
+        font-size: 60px
+        text-transform: uppercase
+
   &__share
     @include display-col
 
