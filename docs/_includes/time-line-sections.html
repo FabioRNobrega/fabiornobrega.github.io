@@ -1,0 +1,13 @@
+{% for section in page.timeline_sections %}
+<section> 
+    <hr style="margin: 20px 0;">
+    <h2 class="base-title">{{ section.title }}</h2>
+    {% for item in section.items %}
+    <div class="column">
+        <h4 class="time-line__title--role">{{ item.name }}</h4>
+        <p>{{ item.description }}</p>
+        <p>{{ item.period }}</p>
+    </div>
+    {% endfor %}
+</section>
+{% endfor %}
