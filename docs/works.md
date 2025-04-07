@@ -7,8 +7,13 @@ works:
   - type: 
     title: Web Developer
     collection: 
+      - title: Stone Co  
+        description: Complete solution for sales, management, and credit — POS, Pix, billing, and business account in one place.  
+        continue: See More  
+        url: https://www.stone.com.br/produtos-stone/
+        image: works/stoneco.png
       - title: Lemoney Open Cashback
-        description: My current project on LemoneyWay. 
+        description: Cashback as service for any application LemoneyWay. 
         continue: See More 
         url: https://lemoneyway.com/opencashback/en/
         image: works/opencashback.jpeg

@@ -7,11 +7,23 @@ works:
   - type: 
     title: Web Developer
     collection: 
-      - title: Lemoney Open Cashback
-        description: Meu projeto atual na LemoneyWay. 
-        continue: Veja mais
-        url: https://lemoneyway.com/opencashback/en/
-        image: works/opencashback.jpeg
+      - title: Stone Co  
+        description: Solução completa para vendas, gestão e crédito — maquininha, Pix, boletos e conta PJ em um só lugar.  
+        continue: Ver mais  
+        url: https://www.stone.com.br/produtos-stone/
+        image: works/stoneco.png
+
+      - title: Lemoney Open Cashback  
+        description: Cashback como serviço para qualquer aplicação via LemoneyWay.  
+        continue: Ver mais  
+        url: https://lemoneyway.com/opencashback/en/  
+        image: works/opencashback.jpeg  
+
+      - title: Phoenix LiveView Web Message  
+        description: Exemplo simples de chat web usando Elixir e Phoenix LiveView.  
+        continue: Ver mais  
+        url: https://github.com/FabioRNobrega/elixir-phoenix-liveview-messenger-example  
+        image: works/phoenix.png  
   - type: 
     title: Arte Digital/Electronica
     collection: 
