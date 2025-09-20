@@ -21,7 +21,7 @@
             <h1 class="home__title"> {{ page.about-me.title }} </h1>
             <p> {{ page.about-me.body }} </p>
           </div>
-          <img src="{{site.url}}/assets/images/avatar/avatar.jpg" alt="">
+          <img src="{{site.baseurl}}/assets/images/avatar/avatar.jpg" alt="">
         </div>
       </section>
 
@@ -34,12 +34,24 @@
             {{ page.how-can-i-help-you.body}}
           </p>
           <div style="margin-bottom: 40px;">
-            <a href="{{ site.url }}/{{ page.how-can-i-help-you.call-to-action.link }}">
+            <a href="{{ site.baseurl }}/{{ page.how-can-i-help-you.call-to-action.link }}">
               {{ page.how-can-i-help-you.call-to-action.text }}
             </a>
           </div>
         </div>
       </section>
+
+      <section class="base-container">
+        <div style="position: relative; display: inline-block;">
+          <img src="{{site.baseurl}}/assets/banners/books-giveway.png" alt="Books give way" style="display: block; width: 100%; border-radius: 10px;">
+          <div style="position: absolute;bottom: 20%; right: 20%; z-index: 10;">
+            <a style="background-color: var(--lighter-primary-color); border-radius: 50px; border: 1px solid var(--border-color); color: var(--text-color);cursor: pointer;font-size: 16px;font-weight: 700;margin: 12px 0;padding: 12px;text-align: center;text-decoration: none;transition: all .15s linear;width: 100%;backdrop-filter: blur(15px);" href="{{ site.baseurl }}/pt/books-giveway">
+              {{ page.how-can-i-help-you.call-to-action.text }}
+            </a>
+          </div>
+        </div>
+      </section>
+
 
       <section class="home__posts"> 
         <div class="base-container">
@@ -63,7 +75,7 @@
           </h2>
           {% for post in page.featured-articles.data %}
           <div class="home__featured">
-            <a href="{{site.url}}/{{post.url}}">
+            <a href="{{site.baseurl}}/{{post.url}}">
               <h4 style="margin-bottom: 10px;">
                 {{ post.title}}
               </h4>    

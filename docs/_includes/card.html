@@ -8,7 +8,7 @@
         {% if post.image %}
           <img class="card-img-top" src="{{ site.baseurl }}/assets/images/posts/{{ post.image }}" alt="{{prop.title}}" />
         {% elsif prop == project %}    
-            <img class="card-img-top" src="{{{ site.baseurl }}/assets/images/{{ prop.image }}" alt="{{prop.title}}" />      
+            <img class="card-img-top" src="{{ site.baseurl }}/assets/images/{{ prop.image }}" alt="{{prop.title}}" />      
         {% else %}
           <img class="postcard__img invert-img-color" src="{{ site.baseurl }}/assets/images/logo/logo-cut.png" alt="Farno logo" />
         {% endif %}

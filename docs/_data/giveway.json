@@ -1,0 +1,493 @@
+{
+  "genres": [
+    {
+      "name": "Ficção Científica",
+      "name-id": "ScienceFiction",
+      "books": [
+        {
+          "image": "2001 - Uma odisseia no Espaço - Arthur C. Clarke.jpg",
+          "title": "2001 - Uma odisseia no Espaço",
+          "author": "Arthur C. Clarke",
+          "genre": "Ficção Científica",
+          "genre-id": "fc",
+          "description": "Um clássico da ficção científica que aborda a evolução humana, inteligência artificial e os mistérios do universo."
+        },
+        {
+          "image": "Adminrável Mundo Novo - Aldous Huxley.jpg",
+          "title": "Admirável Mundo Novo",
+          "author": "Aldous Huxley",
+          "genre": "Ficção Científica",
+          "genre-id": "fc",
+          "description": "Uma distopia que explora controle social, condicionamento e a perda da individualidade em um futuro tecnológico."
+        },
+        {
+          "image": "Contato -Carl Sagan.jpg",
+          "title": "Contato",
+          "author": "Carl Sagan",
+          "genre": "Ficção Científica",
+          "genre-id": "fc",
+          "description": "Romance que combina ciência e filosofia para explorar a possibilidade de contato com civilizações extraterrestres."
+        },
+        {
+          "image": "Deuses e astronautas no antigo Oriente - W. Raymond Drake.jpg",
+          "title": "Deuses e astronautas no antigo Oriente",
+          "author": "W. Raymond Drake",
+          "genre": "Ficção Científica",
+          "description": "Uma investigação que mistura arqueologia e teorias de antigos astronautas no Oriente antigo."
+        },
+        {
+          "image": "Encarcerados - John Scalzi.jpg",
+          "title": "Encarcerados",
+          "author": "John Scalzi",
+          "genre": "Ficção Científica",
+          "description": "Uma trama de ficção científica sobre tecnologia, consciência e os limites do corpo humano."
+        },
+        {
+          "image": "Mortal Engins -  Philip Reeve.jpg",
+          "title": "Mortal Engines",
+          "author": "Philip Reeve",
+          "genre": "Ficção Científica",
+          "description": "Primeiro livro da série Máquinas Mortais, que apresenta um futuro pós-apocalíptico com cidades móveis devorando umas às outras."
+        },
+        {
+          "image": "Os Própios Deuses - Issac Asimov.jpg",
+          "title": "Os Próprios Deuses",
+          "author": "Isaac Asimov",
+          "genre": "Ficção Científica",
+          "description": "Um dos grandes romances de Asimov, explorando a ciência, a ética e o contato com civilizações alienígenas."
+        },
+        {
+          "image": "Saga Spraw 0 William Gibson.jpg",
+          "title": "Trilogia Sprawl (Neuromancer, Count Zero, Mona Lisa Overdrive)",
+          "author": "William Gibson",
+          "genre": "Ficção Científica",
+          "description": "Clássica trilogia cyberpunk que definiu o gênero, explorando inteligência artificial, hackers e realidades virtuais."
+        },
+        {
+          "image": "Fluam minhas lagrimas disse o Policial -  Philip K Dick.jpg",
+          "title": "Fluam, Minhas Lágrimas, Disse o Policial",
+          "author": "Philip K. Dick",
+          "genre": "Ficção Científica",
+          "description": "Uma distopia que explora vigilância, identidade e manipulação social em um regime autoritário."
+        },
+        {
+          "image": "Sonhos Elétricos - Philip K Dick.jpg",
+          "title": "Sonhos Elétricos",
+          "author": "Philip K. Dick",
+          "genre": "Ficção Científica",
+          "description": "Coletânea de contos de Philip K. Dick adaptados para a televisão, misturando paranoia, tecnologia e futuros distópicos."
+        },
+        {
+          "image": "O Homem do Castelo Alto -  Philip K Dick.jpg",
+          "title": "O Homem do Castelo Alto",
+          "author": "Philip K. Dick",
+          "genre": "Ficção Científica",
+          "description": "Romance distópico que imagina um mundo em que o Eixo venceu a Segunda Guerra Mundial."
+        },
+        {
+          "image": "Ubik -  Philip K Dick.jpg",
+          "title": "Ubik",
+          "author": "Philip K. Dick",
+          "genre": "Ficção Científica",
+          "description": "Um dos romances mais enigmáticos de Dick, explorando morte, realidades múltiplas e a natureza da existência."
+        },
+        {
+          "image": "VALIS  - Philip K Dick.jpg",
+          "title": "VALIS",
+          "author": "Philip K. Dick",
+          "genre": "Ficção Científica",
+          "genre-id": "fc",
+          "description": "Romance semiautobiográfico de Dick, misturando filosofia, teologia e ficção científica em uma jornada metafísica."
+        },
+        {
+          "image": "Androides Sonham com Ovelhas Elétricas aka Blade Runner - Philip K Dick.jpg",
+          "title": "Androides Sonham com Ovelhas Elétricas?",
+          "author": "Philip K. Dick",
+          "genre": "Ficção Científica",
+          "genre-id": "fc",
+          "description": "A obra que inspirou o filme Blade Runner, explorando a linha tênue entre humanidade e artificialidade."
+        }
+      ]
+    },
+    {
+      "name": "Empreendedorismo",
+      "name-id": "empreendedorismo",
+      "books": [
+        {
+          "image": "5 Segundos o jeito Stone de Servir o Cliente - Algusto Lins.jpg",
+          "title": "5 Segundos: O jeito Stone de Servir o Cliente",
+          "author": "Augusto Lins",
+          "genre": "Empreendedorismo",
+          "description": "Relato de como a cultura organizacional e o foco na execução ajudaram a Stone a crescer sem perder a essência de servir bem o cliente."
+        },
+        {
+          "image": "Desing Driven Data Science.jpg",
+          "title": "Design Driven Data Science",
+          "author": "Ysmar Vianna, Mauricio Vianna, Ricardo Sepulveda e outros",
+          "genre": "Empreendedorismo",
+          "description": "Integra Design Thinking com ciência de dados e aprendizado de máquina para criar soluções de negócios inovadoras."
+        }
+      ]
+    },
+    {
+      "name": "Romance",
+      "name-id": "romance",
+      "books": [
+        {
+          "image": "A Arte de Correr na Chuva - Garth Stein.jpg",
+          "title": "A Arte de Correr na Chuva",
+          "author": "Garth Stein",
+          "genre": "Romance",
+          "description": "Narrado pelo cachorro Enzo, o livro é uma reflexão emocionante sobre lealdade, amor e superação."
+        }
+      ]
+    },
+    {
+      "name": "Arte-Cinema",
+      "name-id": "arte-cinema",
+      "books": [
+        {
+          "image": "A Arte do Cimea - Star Wars.jpg",
+          "title": "A Arte do Cinema: Star Wars",
+          "author": "Coletânea",
+          "genre": "Arte e Cinema",
+          "description": "Uma coletânea de artes, entrevistas e conceitos visuais que marcaram a franquia Star Wars."
+        }
+      ]
+    },
+    {
+      "name": "Filosofia & Sociologia",
+      "name-id": "filo-soci",
+      "books": [
+        {
+          "image": "A Étiva Protestante e o Espírito do Captalismo - Max Weber.jpg",
+          "title": "A Ética Protestante e o Espírito do Capitalismo",
+          "author": "Max Weber",
+          "genre": "Sociologia",
+          "description": "Obra clássica que relaciona a ética protestante ao desenvolvimento do capitalismo moderno."
+        },
+        {
+          "image": "A Obra de arte da época de sua reprodutibilidade técnica -  Walter Benjamin.jpg",
+          "title": "A Obra de Arte na Época de Sua Reprodutibilidade Técnica",
+          "author": "Walter Benjamin",
+          "genre": "Filosofia e Arte",
+          "description": "Um dos textos mais influentes sobre a relação entre arte, técnica e sociedade no século XX."
+        },
+        {
+          "image": "Breviario da Estética (PT-BR e ITA) - Benedetto Croce.jpg",
+          "title": "Breviário de Estética",
+          "author": "Benedetto Croce",
+          "genre": "Filosofia",
+          "description": "Obra clássica que introduz e debate conceitos fundamentais da estética filosófica."
+        },
+        {
+          "image": "Introdução a Literatura Fantástica  - Txvetan Todorev.jpg",
+          "title": "Introdução à Literatura Fantástica",
+          "author": "Tzvetan Todorov",
+          "genre": "Filosofia & Sociologia",
+          "description": "Clássico estudo teórico sobre a literatura fantástica e suas fronteiras entre o real e o sobrenatural."
+        },
+        {
+          "image": "O Caminho do Samurai - Inazo Nitobe.jpg",
+          "title": "O Caminho do Samurai (Bushido)",
+          "author": "Inazo Nitobe",
+          "genre": "Filosofia & Sociologia",
+          "description": "Clássico sobre o código de honra dos samurais, analisando seus valores morais e espirituais."
+        },
+        {
+          "image": "o Livro Vermelho - Mao Tse Tung.jpg",
+          "title": "O Livro Vermelho",
+          "author": "Mao Tsé-Tung",
+          "genre": "Filosofia & Sociologia",
+          "description": "Coletânea de citações do líder chinês, que se tornou obra fundamental do comunismo no século XX."
+        },
+        {
+          "image": "O Príncipe - Maquiavel.jpg",
+          "title": "O Príncipe",
+          "author": "Nicolau Maquiavel",
+          "genre": "Filosofia & Sociologia",
+          "description": "Obra clássica de ciência política, discutindo estratégias de poder e liderança."
+        },
+        {
+          "image": "Obra Abertta  - Ubverto Eco.jpg",
+          "title": "Obra Aberta",
+          "author": "Umberto Eco",
+          "genre": "Filosofia & Sociologia",
+          "description": "Análise sobre a estética e a interpretação da arte, destacando o papel ativo do leitor/espectador."
+        },
+        {
+          "image": "Significado das Artes Visuais - Erwin Panofsky.jpg",
+          "title": "Significado nas Artes Visuais",
+          "author": "Erwin Panofsky",
+          "genre": "Filosofia & Sociologia",
+          "genre-id": "filo-soci",
+          "description": "Estudo clássico de Panofsky sobre iconologia e interpretação das artes visuais."
+        }
+      ]
+    },
+    {
+      "name": "Fantasia",
+      "name-id": "fantasia",
+      "books": [
+        {
+          "image": "As Crônicas de Prydain - Lloyd Alexander.jpg",
+          "title": "As Crônicas de Prydain",
+          "author": "Lloyd Alexander",
+          "genre": "Fantasia",
+          "description": "Uma série de fantasia clássica inspirada em mitos galeses, acompanhando as aventuras de Taran e seus amigos em Prydain."
+        }
+      ]
+    },
+    {
+      "name": "Mangá",
+      "name-id": "manga",
+      "books": [
+        {
+          "image": "Aishiteruze Baby - Falta o 1 e 2.jpg",
+          "title": "Aishiteruze Baby",
+          "author": "Yoko Maki",
+          "genre": "Mangá",
+          "description": "Um shoujo que acompanha a vida de Kippei, um adolescente que passa a cuidar de sua pequena prima Yuzuyu."
+        },
+        {
+          "image": "Blood Plus  - A.jpg",
+          "title": "Blood+ A",
+          "author": "Asuka Katsura",
+          "genre": "Mangá",
+          "description": "Spin-off do universo Blood+, explorando novos personagens e conflitos sobrenaturais."
+        },
+        {
+          "image": "Blood Plus.jpg",
+          "title": "Blood+",
+          "author": "Asuka Katsura",
+          "genre": "Mangá",
+          "description": "Adaptação em mangá do anime Blood+, acompanhando Saya em sua luta contra criaturas vampíricas."
+        },
+        {
+          "image": "Destino Cativo - Matsuri Hino - Completo.jpg",
+          "title": "Destino Cativo",
+          "author": "Matsuri Hino",
+          "genre": "Mangá",
+          "description": "Mangá shoujo que mistura romance, mistério e drama em um ambiente aristocrático."
+        },
+        {
+          "image": "Hellsing.jpg",
+          "title": "Hellsing",
+          "author": "Kohta Hirano",
+          "genre": "Mangá",
+          "description": "Mangá de ação e horror que acompanha a organização Hellsing e seu guerreiro imortal Alucard contra criaturas sobrenaturais."
+        },
+        {
+          "image": "Helssi.jpg",
+          "title": "Slam Dunk",
+          "author": "Takehiko Inoue",
+          "genre": "Mangá",
+          "description": "Clássico do mangá esportivo, acompanhando a trajetória de Hanamichi Sakuragi e o time Shohoku no basquete colegial."
+        }
+      ]
+    },
+    {
+      "name": "Quadrinhos",
+      "name-id": "quadrinhos",
+      "books": [
+        {
+          "image": "Captão America - Primeiras Historias.jpg",
+          "title": "Capitão América: Primeiras Histórias",
+          "author": "Marvel Comics",
+          "genre": "Quadrinhos",
+          "description": "Coletânea com as primeiras aventuras clássicas do Capitão América."
+        },
+        {
+          "image": "Batman - O que aconteceu com o batman - Encadernado.jpg",
+          "title": "Batman: O que Aconteceu ao Cavaleiro das Trevas?",
+          "author": "Neil Gaiman & Andy Kubert",
+          "genre": "Quadrinhos",
+          "description": "Uma história alternativa e reflexiva sobre o legado do Batman."
+        },
+        {
+          "image": "Batman O filho do Demónio - Encadernado .jpg",
+          "title": "Batman: O Filho do Demônio",
+          "author": "Mike W. Barr & Jerry Bingham",
+          "genre": "Quadrinhos",
+          "description": "Um clássico encadernado que explora o relacionamento de Batman com Talia al Ghul e seu filho."
+        },
+        {
+          "image": "Contos Fabulosos.jpg",
+          "title": "Contos Fabulosos",
+          "author": "Bill Willingham e outros",
+          "genre": "Quadrinhos",
+          "description": "Uma coletânea de histórias do universo de Fábulas, expandindo personagens e mitologia."
+        },
+        {
+          "image": "Coleção Scott Pilgrim - Lee O Malley .jpg",
+          "title": "Scott Pilgrim Contra o Mundo",
+          "author": "Bryan Lee O'Malley",
+          "genre": "Quadrinhos",
+          "description": "Uma mistura de humor, romance e cultura pop que acompanha Scott Pilgrim em suas batalhas inusitadas."
+        },
+        {
+          "image": "Coruja - Before Watchmen  - Encadernado.jpg",
+          "title": "Antes de Watchmen: Coruja",
+          "author": "J. Michael Straczynski, Andy Kubert, Joe Kubert",
+          "genre": "Quadrinhos",
+          "description": "História derivada do universo Watchmen, focada no personagem Coruja."
+        },
+        {
+          "image": "Crise de Identidade - Não Completo.jpg",
+          "title": "Crise de Identidade",
+          "author": "Brad Meltzer, Rags Morales",
+          "genre": "Quadrinhos",
+          "description": "Uma das grandes sagas da DC Comics, envolvendo mistério, conspiração e impacto duradouro na Liga da Justiça."
+        },
+        {
+          "image": "IZombi encadernado.jpg",
+          "title": "iZombie: Morri pro Mundo",
+          "author": "Chris Roberson, Michael Allred",
+          "genre": "Quadrinhos",
+          "description": "HQ que mistura humor, terror e drama, acompanhando Gwen Dylan, uma coveira zumbi que precisa se alimentar de cérebros para manter sua consciência."
+        },
+        {
+          "image": "John Constantine - A Empatia é o Inimigo Encadernado.jpg",
+          "title": "John Constantine, Hellblazer: A Empatia é o Inimigo",
+          "author": "Denise Mina, Leonardo Manco",
+          "genre": "Quadrinhos",
+          "description": "Uma das histórias mais sombrias de Constantine, onde empatia e manipulação se tornam armas perigosas."
+        },
+        {
+          "image": "Lanterna Verde -  A Noite Mias Densa - Completo.jpg",
+          "title": "Lanterna Verde: A Noite Mais Densa",
+          "author": "Geoff Johns, Ivan Reis",
+          "genre": "Quadrinhos",
+          "description": "Uma das maiores sagas da DC Comics, onde os Lanternas enfrentam a escuridão da morte personificada."
+        },
+        {
+          "image": "Lanterna Verde - O dia mais Claro  - Completo.jpg",
+          "title": "Lanterna Verde: O Dia Mais Claro",
+          "author": "Geoff Johns, Peter Tomasi",
+          "genre": "Quadrinhos",
+          "description": "Continuação de A Noite Mais Densa, focando na luta pela vida e renascimento dos heróis e vilões."
+        },
+        {
+          "image": "lanterna verde Mensal.jpg",
+          "title": "Lanterna Verde (Mensal)",
+          "author": "Diversos autores",
+          "genre": "Quadrinhos",
+          "description": "Revista mensal da DC Comics que acompanha as aventuras de Hal Jordan e a Tropa dos Lanternas Verdes."
+        },
+        {
+          "image": "Lanterna Verde Origem Secreta Encardernado.jpg",
+          "title": "Lanterna Verde: Origem Secreta",
+          "author": "Geoff Johns, Ivan Reis",
+          "genre": "Quadrinhos",
+          "description": "Reinterpretação moderna da origem de Hal Jordan como Lanterna Verde, conectando com eventos futuros."
+        },
+        {
+          "image": "Mitos Marvel - Panini.jpg",
+          "title": "Mitos Marvel",
+          "author": "Paul Jenkins, Paolo Rivera",
+          "genre": "Quadrinhos",
+          "description": "Uma reinterpretação moderna das origens dos principais heróis da Marvel, com arte e narrativa únicas."
+        },
+        {
+          "image": "Modoqueiro Fantasma -  Estrada para a Danação.jpg",
+          "title": "Motoqueiro Fantasma: Estrada para a Danação",
+          "author": "Garth Ennis, Clayton Crain",
+          "genre": "Quadrinhos",
+          "description": "História sombria da Marvel, onde o Motoqueiro Fantasma enfrenta forças infernais em busca de redenção."
+        },
+        {
+          "image": "Mulher Gato Cidade Eterna Encardernado.jpg",
+          "title": "Mulher-Gato: Cidade Eterna",
+          "author": "Jeph Loeb, Tim Sale",
+          "genre": "Quadrinhos",
+          "description": "Uma história sombria e elegante que explora o lado criminoso e sedutor da Mulher-Gato em Gotham City."
+        },
+        {
+          "image": "Univerço DC Mensal.jpg",
+          "title": "Universo DC (Mensal)",
+          "author": "DC Comics",
+          "genre": "Quadrinhos",
+          "genre-id": "quadrinhos",
+          "description": "Revista mensal que reúne histórias e sagas de diversos heróis e vilões do universo DC."
+        },
+        {
+          "image": "Warcraft.jpg",
+          "title": "Warcraft: Trilogia do Poço do Sol",
+          "author": "Richard A. Knaak & Jae-Hwan Kim",
+          "genre": "Quadrinhos",
+          "genre-id": "quadrinhos",
+          "description": "Mangá ambientado no universo de Warcraft, explorando batalhas épicas, magia e o destino de elfos e dragões."
+        }
+      ]
+    },
+    {
+      "name": "Clássicos",
+      "name-id": "classicos",
+      "books": [
+        {
+          "image": "Classicos -  Frankenstein - O Médico e o Mosntro - Dracula.jpg",
+          "title": "Frankenstein, O Médico e o Monstro, Drácula",
+          "author": "Mary Shelley, R. L. Stevenson, Bram Stoker",
+          "genre": "Clássicos",
+          "description": "Uma coletânea com três obras fundamentais da literatura gótica e de horror."
+        },
+        {
+          "image": "Épipo - Sófocles.jpg",
+          "title": "Édipo",
+          "author": "Sófocles (adaptação de Menelaos Stephanides)",
+          "genre": "Clássicos",
+          "description": "Uma das tragédias gregas mais célebres, explorando destino, livre-arbítrio e tragédia familiar."
+        },
+        {
+          "image": "Macunaíma -   Mário de Andrade.jpg",
+          "title": "Macunaíma: O Herói sem Nenhum Caráter",
+          "author": "Mário de Andrade",
+          "genre": "Clássicos",
+          "description": "Marco do modernismo brasileiro, que mistura mitologia indígena, folclore e crítica social."
+        },
+        {
+          "image": "On the Road - jack Kerouac.jpg",
+          "title": "On the Road: Pé na Estrada",
+          "author": "Jack Kerouac",
+          "genre": "Clássicos",
+          "description": "Marco da literatura beat, narrando viagens pelos EUA e reflexões sobre liberdade e contracultura."
+        },
+        {
+          "image": "viagem Ao Centro da Terra - Julio Verne.jpg",
+          "title": "Viagem ao Centro da Terra",
+          "author": "Júlio Verne",
+          "genre": "Clássicos",
+          "genre-id": "classicos",
+          "description": "Obra clássica de Júlio Verne que narra a expedição subterrânea rumo ao centro da Terra, misturando ciência e aventura."
+        }
+      ]
+    },
+    {
+      "name": "Terror",
+      "name-id": "terror",
+      "books": [
+        {
+          "image": "Love - Stephen King.jpg",
+          "title": "Love: A História de Lisey",
+          "author": "Stephen King",
+          "genre": "Terror",
+          "description": "Um romance psicológico e sombrio que mistura luto, memória e realidades paralelas."
+        }
+      ]
+    },
+    {
+      "name": "Ciência",
+      "name-id": "ciencia",
+      "books": [
+        {
+          "image": "Uma Breve Historia do Tempo - Stephen Hawking.jpg",
+          "title": "Uma Breve História do Tempo",
+          "author": "Stephen Hawking",
+          "genre": "Ficção Científica",
+          "genre-id": "fc",
+          "description": "Obra fundamental de divulgação científica que explica conceitos do universo, buracos negros e a origem do tempo."
+        }
+      ]
+    }
+  ]
+}

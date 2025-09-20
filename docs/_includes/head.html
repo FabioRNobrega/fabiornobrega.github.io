@@ -20,7 +20,7 @@
   <script src="https://kit.fontawesome.com/5d13920381.js" crossorigin="anonymous"></script>
   {% for localized_page in localized_pages %}
   {% unless localized_page.locale == page.locale %}
-  <link rel="alternate" hreflang="{{ localized_page.lang }}" href="{{ site.url }}{{ site.baseurl }}{{ localized_page.url }}">
+  <link rel="alternate" hreflang="{{ localized_page.lang }}" href="{{ site.baseurl }}{{ site.baseurl }}{{ localized_page.url }}">
   {% endunless %}
   {% endfor %}
   {% seo title=false%}

@@ -1,0 +1,49 @@
+---
+---
+
+{% include i18n/i18n %}
+
+
+<!DOCTYPE html>
+<html lang="{{ locale.lang }}" {% if locale.direction == 'rtl' %}dir="rtl"{% endif %}>
+  
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+   <main class="base-container">
+    <img src="{{site.baseurl}}/assets/banners/books-giveway.png" alt="Books give way" style="display: block; width: 100%; border-radius: 10px; margin-bottom: 20px;">
+    <h2 class="base-title"> {{ page.title }}</h2>
+    <p>{{ page.description }}</p>
+    <section>
+        <h3 class="base-title"> Gêneros: </h3>
+        <div style="display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap; max-width: 900px;">
+            {% for genre in site.data.giveway.genres %}   
+                <a class="books-genre-link" href="#{{  genre.name-id}} "> {{  genre.name }}</a>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section> 
+        {% for genre in site.data.giveway.genres %}   
+            <h4 id="{{ genre.name-id }}" class="base-title" style="text-transform: capitalize;"> {{ genre.name }}</h4>
+            <div class="books-list">
+                {% for book in genre.books %}   
+                    <div class="books-list__card">
+                        <div class="books-list__card--book">
+                            <img class="books-list__card--img" src="{{ site.baseurl }}/assets/images/books/{{ book.image }}" alt="{{book.title}}" />
+                        </div>
+                        <div class="books-list__card--description">
+                            <div class="books-list__card--tag">{{ book.genre }}</div>
+                            <h4> {{ book.title}} </h4>
+                            <h2> {{ book.author}}</h2>
+                            <p>{{ book.description }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </section>
+  </main>
+</body>
+</html>

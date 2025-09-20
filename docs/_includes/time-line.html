@@ -3,7 +3,7 @@
    {% for company in page.time_line%}
     <hr>
     <div class="time-line__company row">
-      <img src="{{site.url}}/assets/images/logo/{{ company.img_path }}" alt="company.name">
+      <img src="{{site.baseurl}}/assets/images/logo/{{ company.img_path }}" alt="company.name">
       <div>
         <h4> {{ company.name }} </h4>
         <p> {{ company.time }}</p>

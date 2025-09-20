@@ -14,7 +14,7 @@ image: 2021-09-07-data-with-jekyll.jpeg
 
 _Esse post foi originalmente publicado no [museu da computação da ufrj](https://museucomputacao.github.io/)_.
 
-**“Data is the new oil”** (Dados são o novo Petróleo) como exemplifica o matemático e cientista de dados [Clive Humby](https://en.wikipedia.org/wiki/Clive_Humby), lidar com dados ganha, cada vez mais, um valor inimaginável. Portanto uma sequência de zeros e uns ganha um significado que pode mudar vidas e setores financeiros inteiros. O uso desses dados tem que ser tomados com muita responsabilidade, entretanto o que vamos discutir nesse post é algo bem mais inicial. **Vamos entender como funciona alguns modelos de transmissão de informações no formato texto, como o [YML]({{site.url}}/{{ page.url}}/#yml), [JSON]({{site.url}}/{{ page.url}}/#json) e [CSV]({{site.url}}/{{ page.url}}/#csv), e aplica-los na prática ao framework [jekyll](https://jekyllrb.com)**. 
+**“Data is the new oil”** (Dados são o novo Petróleo) como exemplifica o matemático e cientista de dados [Clive Humby](https://en.wikipedia.org/wiki/Clive_Humby), lidar com dados ganha, cada vez mais, um valor inimaginável. Portanto uma sequência de zeros e uns ganha um significado que pode mudar vidas e setores financeiros inteiros. O uso desses dados tem que ser tomados com muita responsabilidade, entretanto o que vamos discutir nesse post é algo bem mais inicial. **Vamos entender como funciona alguns modelos de transmissão de informações no formato texto, como o [YML]({{site.baseurl}}/{{ page.url}}/#yml), [JSON]({{site.baseurl}}/{{ page.url}}/#json) e [CSV]({{site.baseurl}}/{{ page.url}}/#csv), e aplica-los na prática ao framework [jekyll](https://jekyllrb.com)**. 
 
 Para começarmos é importante entender o fluxo convencional de distribuição de dados dentro da web. É comum entrarmos em e-commerces e vermos diversos textos e listagens de produtos de forma de cards ou blocos de informação. Na maioria dessas plataformas existe uma API (Application Programming Interface ou em português "Interface de programação de aplicações"), por traz que se conecta a um banco de dados e gerencia essa informação apresentada ao usuário final. Ou seja, cada produto que você visualiza em um site possui uma representação em um banco de dados que pode ser uma linha em uma tabela (caso o banco seja no formato relacional [SQL](https://pt.wikipedia.org/wiki/Banco_de_dados_relacional)). Em seguida esse dado é enviado para a interface ([ Frontend ](https://pt.wikipedia.org/wiki/Front-end_e_back-end)) renderiza-lo podendo ser um modelo de informação como um JSON um YML ou até um CSV. Na maioria das vezes como é o caso de uma API com [Ruby on Rails](https://guides.rubyonrails.org) pode assim retornar uma lista de JSON. Neste sentido, portanto, vamos iterar por essa lista e renderizar separadamente cada informação da mesma usando uma estrutura de repetição como por exemplo um laço for do [liquid](https://shopify.github.io/liquid/).
 
@@ -79,7 +79,7 @@ Agora que temos nosso arquivo JSON setado com os dados que precisamos renderizar
     {% if item.active %}
       <div class="items__card">
         <img 
-          src="{{ site.url }}/assets/{{ item.image }}" 
+          src="{{ site.baseurl }}/assets/{{ item.image }}" 
           alt="{{ item.name }}"
         >
         <div class="items__card--name">
@@ -149,7 +149,7 @@ Agora assim como no JSON podemos fazer um laço de interação `FOR` seguido por
         {% if item.active %}
           <div class="items__card">
             <img 
-              src="{{ site.url }}/assets/{{ item.image }}" 
+              src="{{ site.baseurl }}/assets/{{ item.image }}" 
               alt="{{ item.name }}"
             >
             <div class="items__card--name">
@@ -247,7 +247,7 @@ Com isso podemos compreender de forma mais clara como a primeira linha se relaci
           {% if item.active == "true" %}
             <div class="items__card">
               <img 
-                src="{{ site.url }}/assets/{{ item.image }}" 
+                src="{{ site.baseurl }}/assets/{{ item.image }}" 
                 alt="{{ item.name }}"
               >
               <div class="items__card--name">
@@ -271,4 +271,4 @@ Neste exemplo portanto estamos fazendo um laço `FOR` para iterar pelo arquivo m
 
 ### Conclusão 
 
-Nesse post aprendemos a lidar com dados no framework jekyll utilizando três tipos de arquivos o [YML]({{site.url}}/{{ page.url}}/#yml), [JSON]({{site.url}}/{{ page.url}}/#json) e o [CSV]({{site.url}}/{{ page.url}}/#csv). É importante compreendermos que não existem apenas essas formas de aplicar dados no Jekyll, e que os métodos e conhecimentos desses tipos de arquivos não são exclusivos do jekyll, do liquid ou do ruby. A lógica por traz desse processo de interação de dados dentro de uma arquivo ou resposta de uma api pode ser aplicado em n linguagens de programação e frameworks web. Portando agora fica nas suas mãos decidir qual formato de armazenamento de dados se adequa mais ao problema que você esta tentando resolver. Para ficar ligado em mais posts como esse considere assinar nosso [feed]({{site.url}}/feed.xml).
+Nesse post aprendemos a lidar com dados no framework jekyll utilizando três tipos de arquivos o [YML]({{site.baseurl}}/{{ page.url}}/#yml), [JSON]({{site.baseurl}}/{{ page.url}}/#json) e o [CSV]({{site.baseurl}}/{{ page.url}}/#csv). É importante compreendermos que não existem apenas essas formas de aplicar dados no Jekyll, e que os métodos e conhecimentos desses tipos de arquivos não são exclusivos do jekyll, do liquid ou do ruby. A lógica por traz desse processo de interação de dados dentro de uma arquivo ou resposta de uma api pode ser aplicado em n linguagens de programação e frameworks web. Portando agora fica nas suas mãos decidir qual formato de armazenamento de dados se adequa mais ao problema que você esta tentando resolver. Para ficar ligado em mais posts como esse considere assinar nosso [feed]({{site.baseurl}}/feed.xml).
