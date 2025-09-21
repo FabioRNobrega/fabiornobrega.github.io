@@ -106,6 +106,13 @@
           "genre": "Ficção Científica",
           "genre-id": "fc",
           "description": "A obra que inspirou o filme Blade Runner, explorando a linha tênue entre humanidade e artificialidade."
+        },
+        {
+          "image": "Saga O Guia do Muchileiro das Galaxias -  Douglas Adams.jpg",
+          "title": "O Guia do Mochileiro das Galáxias (Saga Completa)",
+          "author": "Douglas Adams",
+          "genre": "Ficção Científica",
+          "description": "Uma aventura cósmica repleta de humor ácido e filosofia absurda, acompanhando Arthur Dent e seus companheiros pelo universo em busca de respostas para a vida, o universo e tudo mais."
         }
       ]
     },
@@ -235,6 +242,13 @@
           "author": "Lloyd Alexander",
           "genre": "Fantasia",
           "description": "Uma série de fantasia clássica inspirada em mitos galeses, acompanhando as aventuras de Taran e seus amigos em Prydain."
+        },
+        {
+          "image": "Saga Crepusculo -  Stephenie Meyer.jpg",
+          "title": "Saga Crepúsculo",
+          "author": "Stephenie Meyer",
+          "genre": "Fantasia",
+          "description": "A história de Bella Swan e seu envolvimento com vampiros e lobisomens, explorando amor, perigo e escolhas impossíveis em um mundo sobrenatural."
         }
       ]
     },
@@ -424,6 +438,20 @@
           "genre": "Quadrinhos",
           "genre-id": "quadrinhos",
           "description": "Mangá ambientado no universo de Warcraft, explorando batalhas épicas, magia e o destino de elfos e dragões."
+        },
+        {
+          "image": "Perdedores  - Arco do Filme  - Encadernado.jpg",
+          "title": "Os Perdedores: Hora do Troco",
+          "author": "Andy Diggle e Jock",
+          "genre": "Quadrinhos",
+          "description": "Um grupo de agentes traídos pelo governo busca vingança em uma trama de ação intensa, conspirações e justiça pelas próprias mãos."
+        },
+        {
+          "image": "QUAD ediçao Catarse.jpg",
+          "title": "QUAD",
+          "author": "Diego Sanches, Aluísio C. Santos, Eduardo Schaal, Eduardo Ferigato",
+          "genre": "Quadrinhos",
+          "description": "Uma coletânea nacional de histórias em quadrinhos ambientadas em mundos de ficção científica e fantasia, cada uma com estilo e visão únicos."
         }
       ]
     },
@@ -490,9 +518,23 @@
           "image": "Uma Breve Historia do Tempo - Stephen Hawking.jpg",
           "title": "Uma Breve História do Tempo",
           "author": "Stephen Hawking",
-          "genre": "Ficção Científica",
+          "genre": "Ciência",
           "genre-id": "fc",
           "description": "Obra fundamental de divulgação científica que explica conceitos do universo, buracos negros e a origem do tempo."
+        },
+        {
+          "image": "Palido Ponto Azul - Carl Sagan.jpg",
+          "title": "Pálido Ponto Azul",
+          "author": "Carl Sagan",
+          "genre": "Ciência",
+          "description": "Uma reflexão sobre a posição da humanidade no universo, explorando a fragilidade da Terra e a necessidade de responsabilidade cósmica."
+        },
+        {
+          "image": "Repostas de um Astrofísico - Neil de Grasse Tyson.jpg",
+          "title": "Respostas de um Astrofísico",
+          "author": "Neil deGrasse Tyson",
+          "genre": "Ciência",
+          "description": "Uma coletânea de perguntas do público respondidas com clareza e humor, abordando temas do cosmos, ciência e o papel da humanidade no universo."
         }
       ]
     }
