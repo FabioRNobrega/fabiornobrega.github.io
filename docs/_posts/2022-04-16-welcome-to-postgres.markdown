@@ -8,7 +8,7 @@ categories: postgres
 author: Fábio R. Nóbrega
 continue: Read more
 description: A few introductions on postgres and psql setup for getting things done. 
-image: postgress.png
+image: 2022-04-16-welcome-to-postgres.png
 ---
 # Postgres
 

@@ -13,14 +13,4 @@ RUN apt-get update -qq && apt-get install -y \
   libffi-dev \
   && rm -rf /var/lib/apt/lists/*
 
-COPY Gemfile ./
-
 RUN gem install bundler -v 2.3.26
-
-RUN bundle install
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--port", "3000", "--livereload"]

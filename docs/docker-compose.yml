@@ -9,7 +9,7 @@ services:
     volumes:
       - .:/usr/src/app
       - bundle_cache:/usr/local/bundle
-    command: bundle exec jekyll serve --host 0.0.0.0 --port 3000 --livereload
+    command: bash -lc "bundle check || bundle install && bundle exec jekyll serve --host 0.0.0.0 --port 3000 --livereload"
 
 volumes:
   bundle_cache:
