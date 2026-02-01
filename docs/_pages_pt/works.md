@@ -6,7 +6,12 @@ document_id: works
 works: 
   - type: 
     title: Web Developer
-    collection: 
+    collection:
+      - title: Pathfinder by LOTSGroup
+        description: Construindo a espinha dorsal do ecossistema de logística sustentável do futuro.
+        continue: See more
+        url: https://pathfinder.lotsgroup.com
+        image: works/pathfinder.png
       - title: Stone Co  
         description: Solução completa para vendas, gestão e crédito — maquininha, Pix, boletos e conta PJ em um só lugar.  
         continue: Ver mais  

@@ -5,8 +5,13 @@ description: A selection of things I’ve designed, illustrated, and developed.
 document_id: works
 works: 
   - type: 
-    title: Web Developer
+    title: Software Engineer 
     collection: 
+      - title: Pathfinder by LOTSGroup
+        description: Building the backbone of tomorrow’s sustainable logistics ecosystem.
+        continue: See more
+        url: https://pathfinder.lotsgroup.com
+        image: works/pathfinder.png
       - title: Stone Co  
         description: Complete solution for sales, management, and credit — POS, Pix, billing, and business account in one place.  
         continue: See More  
