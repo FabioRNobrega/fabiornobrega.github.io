@@ -19,6 +19,7 @@
     </main>
     
   {% include footer.html %}
+  {% if page.mermaid or site.mermaid.enabled %}{% include mermaid.html %}{% endif %}
 
 </body>
 

@@ -44,13 +44,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-defaults:
-- scope:
-    path: "assets/img"
-  values:
-    image: true
-
-# Assets settings 
+# Assets settings
 sass:
     sass_dir: _sass
 
@@ -94,6 +88,7 @@ permalink: pretty
 defaults:
 # set page.collection_basename to match collections
 - scope:
+    path: ""
     type: pages
   values:
     layout: page
@@ -125,6 +120,10 @@ defaults:
     path: "_pages_pt/index.*"
   values:
     permalink: "/pt/"
+- scope:
+    path: "assets/img"
+  values:
+    image: true
   
 navigation:
 - index
@@ -134,6 +133,13 @@ navigation:
 - spotify
 - about
 - contact
+
+# Mermaid.js settings
+# Set enabled: true to load Mermaid globally on all pages.
+# Individual pages can still opt-in with `mermaid: true` in front matter.
+mermaid:
+  enabled: true
+  theme: dark # options: default, dark, forest, neutral, base
 
 # Exclude from processing.
 # The following items will not be processed, by default.

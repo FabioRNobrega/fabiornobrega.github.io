@@ -35,26 +35,26 @@
     &:hover
       color: var(--text-color)
 
-  blockquote
+  &__blockquote
     font-style: italic
     background: var(--lighter-background-color)
     padding: 7px
     border-radius: 5px
     margin: 20px 0
 
-    p
+    &__text
       padding: 0
       margin: 0
       text-indent: 0
       font-size: 14px
       text-align: center
 
-    p:first-of-type::first-letter
+    &__text:first-of-type::first-letter
       display: block
       margin: 0
       font-size: 14px
-      position: none
-      top: none
+      position: static
+      top: auto
       float: none
       line-height: 20px
 
@@ -77,6 +77,7 @@
       font-family: var(--font-family-title)
       font-size: 35px
       color: var(--primary-color)
+      line-height: normal
 
     &--content
       p:first-of-type
@@ -177,3 +178,23 @@ table
 
   tr:nth-child(even)
     background-color: var(--lighter-background-color)
+
+// Reset drop-cap and paragraph overrides inside mermaid diagram HTML labels.
+// Mermaid v11 renders flowchart node labels as HTML inside <foreignObject>,
+// so page-level p::first-letter rules bleed in without this guard.
+.mermaid
+  p, p:first-of-type
+    text-indent: 0
+    font-size: inherit
+
+  p::first-letter, p:first-of-type::first-letter
+    font-size: inherit
+    float: none
+    display: inline
+    color: inherit
+    font-family: inherit
+    position: static
+    height: auto
+    line-height: inherit
+    padding: 0
+    margin: 0
