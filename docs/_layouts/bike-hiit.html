@@ -11,77 +11,75 @@
   <main>
     {% include header.html %}
 
-    <div class="base-container">
-      <div class="base-background">
-        <section class="bike-hiit">
-          <h1 class="base-title">{{ page.title }}</h1>
+    <div style="padding: 13px;">
+      <section class="bike-hiit">
+        <h1 class="base-title">{{ page.title }}</h1>
 
-          {% if page.description %}
-          <p class="bike-hiit__description">{{ page.description }}</p>
-          {% endif %}
+        {% if page.description %}
+        <p class="bike-hiit__description">{{ page.description }}</p>
+        {% endif %}
 
-          {{ content }}
+        {{ content }}
 
-          <div class="bike-hiit__tabs" role="tablist" aria-label="{{ page.title }}">
-            {% for workout in page.workouts %}
-            <button
-              type="button"
-              class="bike-hiit__tab{% if forloop.first %} bike-hiit__tab--active{% endif %}"
-              data-bike-hiit-tab="{{ forloop.index0 }}"
-              role="tab"
-              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
-              {{ workout.name }}
-            </button>
-            {% endfor %}
-          </div>
+        <div class="bike-hiit__tabs" role="tablist" aria-label="{{ page.title }}">
+          {% for workout in page.workouts %}
+          <button
+            type="button"
+            class="bike-hiit__tab{% if forloop.first %} bike-hiit__tab--active{% endif %}"
+            data-bike-hiit-tab="{{ forloop.index0 }}"
+            role="tab"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
+            {{ workout.name }}
+          </button>
+          {% endfor %}
+        </div>
 
-          <div class="bike-hiit__panels">
-            {% for workout in page.workouts %}
-            {% assign total_minutes = 0 %}
-            {% for step in workout.steps %}
-              {% assign total_minutes = total_minutes | plus: step.duration %}
-            {% endfor %}
-            <article
-              id="bike-hiit-panel-{{ forloop.index0 }}"
-              class="bike-hiit__panel{% if forloop.first %} bike-hiit__panel--active{% endif %}"
-              data-bike-hiit-panel="{{ forloop.index0 }}"
-              role="tabpanel">
-              <div class="bike-hiit__panel-header">
-                <div>
-                  <h2 class="bike-hiit__panel-title">{{ workout.title }}</h2>
-                  {% if workout.summary %}
-                  <p class="bike-hiit__panel-summary">{{ workout.summary }}</p>
-                  {% endif %}
-                </div>
-
-                <div class="bike-hiit__panel-actions">
-                  <span class="bike-hiit__timer is-hidden" id="bike-hiit-timer-{{ forloop.index0 }}">00:00</span>
-                  <span class="bike-hiit__badge">{{ total_minutes }} min</span>
-                  <button
-                    type="button"
-                    class="bike-hiit__toggle"
-                    data-bike-hiit-toggle="{{ forloop.index0 }}"
-                    aria-label="Start or pause {{ workout.title }}">
-                    <img
-                      id="bike-hiit-play-{{ forloop.index0 }}"
-                      class="bike-hiit__toggle-icon"
-                      src="{{ site.baseurl }}/assets/icons/svgs/solid/play.svg"
-                      alt="">
-                    <img
-                      id="bike-hiit-pause-{{ forloop.index0 }}"
-                      class="bike-hiit__toggle-icon is-hidden"
-                      src="{{ site.baseurl }}/assets/icons/svgs/solid/pause.svg"
-                      alt="">
-                  </button>
-                </div>
+        <div class="bike-hiit__panels">
+          {% for workout in page.workouts %}
+          {% assign total_minutes = 0 %}
+          {% for step in workout.steps %}
+            {% assign total_minutes = total_minutes | plus: step.duration %}
+          {% endfor %}
+          <article
+            id="bike-hiit-panel-{{ forloop.index0 }}"
+            class="bike-hiit__panel{% if forloop.first %} bike-hiit__panel--active{% endif %}"
+            data-bike-hiit-panel="{{ forloop.index0 }}"
+            role="tabpanel">
+            <div class="bike-hiit__panel-header">
+              <div>
+                <h2 class="bike-hiit__panel-title">{{ workout.title }}</h2>
+                {% if workout.summary %}
+                <p class="bike-hiit__panel-summary">{{ workout.summary }}</p>
+                {% endif %}
               </div>
 
-              <ol class="bike-hiit__steps" id="bike-hiit-steps-{{ forloop.index0 }}"></ol>
-            </article>
-            {% endfor %}
-          </div>
-        </section>
-      </div>
+              <div class="bike-hiit__panel-actions">
+                <span class="bike-hiit__timer is-hidden" id="bike-hiit-timer-{{ forloop.index0 }}">00:00</span>
+                <span class="bike-hiit__badge">{{ total_minutes }} min</span>
+                <button
+                  type="button"
+                  class="bike-hiit__toggle"
+                  data-bike-hiit-toggle="{{ forloop.index0 }}"
+                  aria-label="Start or pause {{ workout.title }}">
+                  <img
+                    id="bike-hiit-play-{{ forloop.index0 }}"
+                    class="bike-hiit__toggle-icon"
+                    src="{{ site.baseurl }}/assets/icons/svgs/solid/play.svg"
+                    alt="">
+                  <img
+                    id="bike-hiit-pause-{{ forloop.index0 }}"
+                    class="bike-hiit__toggle-icon is-hidden"
+                    src="{{ site.baseurl }}/assets/icons/svgs/solid/pause.svg"
+                    alt="">
+                </button>
+              </div>
+            </div>
+
+            <ol class="bike-hiit__steps" id="bike-hiit-steps-{{ forloop.index0 }}"></ol>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
     </div>
   </main>
 

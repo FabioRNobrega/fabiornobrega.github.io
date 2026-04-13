@@ -31,10 +31,21 @@
       border-color: var(--bike-hiit-accent)
       color: var(--bike-hiit-accent)
 
+    &:focus,
+    &:focus-visible,
+    &:active
+      color: var(--text-color)
+
     &--active
       background-color: var(--bike-hiit-accent)
       border-color: var(--bike-hiit-accent)
       color: #fff
+
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:active
+        color: #fff
 
   &__panels
     position: relative
@@ -77,6 +88,11 @@
     align-self: center
     gap: 10px
     flex-wrap: wrap
+    @include tablets-and-down
+      width: 100%
+      min-width: 0
+      justify-content: center
+      align-self: center
 
   &__badge,
   &__timer
