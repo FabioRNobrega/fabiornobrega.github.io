@@ -1,11 +1,11 @@
 
 <head>
-  <link rel="stylesheet" type="text/css" href="{{ site.baseusrl }}/assets/css/main.css">  
-  <link rel="manifest" href="{{ site.baseusrl }}/manifest.json">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css">  
+  <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="{{ site.baseusrl }}/assets/images/logo/logo-cut.png"/>
+  <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/images/logo/logo-cut.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>{{ site.title | escape }}{% if page.title %} — {{ page.title | escape }}{% endif %}</title>
@@ -14,7 +14,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Farno Thoughts">
-  <link rel="apple-touch-icon" href="{{ site.baseusrl }}/assets/images/logo/logo-pwa-180x180.png">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/logo/logo-pwa-180x180.png">
 
   <meta name="theme-color" content="#090A0C">
   <script src="https://kit.fontawesome.com/5d13920381.js" crossorigin="anonymous"></script>
@@ -35,7 +35,7 @@
     // Register the service worker
     navigator.serviceWorker
       .register("{{ site.baseurl }}/service-worker.js", {
-        scope: "./"
+        scope: "{{ site.baseurl }}/"
       })
       .then(function (reg) {
         console.log("Service worker has been registered for scope: " + reg.scope);

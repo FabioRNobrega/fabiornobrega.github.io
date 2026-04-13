@@ -2,7 +2,7 @@
 
 {
   "lang": "pt-BR",
-  "dir": "ltr\rtl",
+  "dir": "ltr",
   "name": "Farno Thoughts",
   "short_name": "Farno",
   "icons": [
@@ -20,7 +20,7 @@
     },
     {
       "src": "\/assets\/images\/logo\/logo-pwa-180x180.png",
-      "sizes": "180x190",
+      "sizes": "180x180",
       "type": "image\/png"
     }
   ],

@@ -9,10 +9,6 @@ self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
       console.log("Cached offline page during install");
-
-      if (offlineFallbackPage === "offline.html") {
-        return cache.add(new Response("Update the value of the offlineFallbackPage constant in the serviceworker."));
-      }
       return cache.add(offlineFallbackPage);
     })
   );
@@ -44,7 +40,7 @@ function fromCache(request) {
   // Return response
   // If not in the cache, then return error page
   return caches.open(CACHE).then(function (cache) {
-    console.log("Get from cache or sand 404")
+    console.log("Get from cache or send 404");
     return cache.match(request).then(function (matching) {
       if (!matching || matching.status === 404) {
         return Promise.reject("no-match");
