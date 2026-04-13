@@ -1,4 +1,3 @@
-version: "3.8"
 services:
   jekyll:
     build: .
@@ -9,7 +8,11 @@ services:
     volumes:
       - .:/usr/src/app
       - bundle_cache:/usr/local/bundle
+      - site_build:/usr/src/app/_site
+      - jekyll_cache:/usr/src/app/.jekyll-cache
     command: bash -lc "bundle check || bundle install && bundle exec jekyll serve --host 0.0.0.0 --port 3000 --livereload"
 
 volumes:
   bundle_cache:
+  site_build:
+  jekyll_cache:
