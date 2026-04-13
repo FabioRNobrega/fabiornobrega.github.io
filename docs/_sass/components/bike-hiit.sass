@@ -1,0 +1,209 @@
+@import "../_variables"
+@import "../_mixins"
+
+.bike-hiit
+  --bike-hiit-accent: #e24b4b
+  --bike-hiit-accent-soft: rgba(226, 75, 75, 0.24)
+  max-width: 760px
+  margin: 0 auto
+
+  &__description
+    margin-bottom: 20px
+
+  &__tabs
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
+    margin: 32px 0 20px
+
+  &__tab
+    border: 1px solid var(--border-color)
+    border-radius: 999px
+    background: transparent
+    color: var(--text-color)
+    cursor: pointer
+    font-family: var(--font-family-title)
+    font-size: 0.95rem
+    padding: 10px 18px
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease
+
+    &:hover
+      border-color: var(--bike-hiit-accent)
+      color: var(--bike-hiit-accent)
+
+    &--active
+      background-color: var(--bike-hiit-accent)
+      border-color: var(--bike-hiit-accent)
+      color: #fff
+
+  &__panels
+    position: relative
+
+  &__panel
+    display: none
+    background: rgba(255, 255, 255, 0.04)
+    border: 1px solid var(--border-color)
+    border-radius: 20px
+    padding: 24px
+    box-shadow: var(--box-shadow)
+
+    &--active
+      display: block
+
+  &__panel-header
+    @include display-row
+    justify-content: space-between
+    align-items: center
+    gap: 16px
+    margin-bottom: 24px
+    @include tablets-and-down
+      flex-direction: column
+      align-items: flex-start
+
+  &__panel-title
+    color: var(--bike-hiit-accent)
+    font-family: var(--font-family-title)
+    margin-bottom: 6px
+    text-transform: uppercase
+
+  &__panel-summary
+    margin-top: 0
+    color: var(--text-color)
+
+  &__panel-actions
+    display: flex
+    justify-content: end
+    min-width: 200px
+    align-self: center
+    gap: 10px
+    flex-wrap: wrap
+
+  &__badge,
+  &__timer
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    min-height: 34px
+    border-radius: 999px
+    padding: 0 12px
+    font-size: 0.875rem
+    font-weight: 700
+
+  &__badge
+    background: var(--bike-hiit-accent)
+    color: #fff
+
+  &__timer
+    background: rgba(255, 255, 255, 0.06)
+    border: 1px solid var(--border-color)
+    font-family: monospace
+
+  &__toggle
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: 34px
+    height: 34px
+    border: 0
+    border-radius: 50%
+    cursor: pointer
+    background: #d64545
+    color: #fff
+    padding: 0
+
+  &__toggle-icon
+    width: 14px
+    height: 14px
+    filter: brightness(0) invert(1)
+
+  &__steps
+    list-style: none
+
+  &__step
+    display: grid
+    grid-template-columns: 18px 1fr
+    gap: 14px
+    padding-bottom: 18px
+    position: relative
+
+    &:last-child
+      padding-bottom: 0
+
+      &::after
+        display: none
+
+    &::after
+      content: ""
+      position: absolute
+      left: 7px
+      top: 18px
+      width: 4px
+      height: calc(100% - 8px)
+      background: var(--bike-hiit-accent-soft)
+
+    &--done
+      .bike-hiit__step-marker
+        background: var(--bike-hiit-accent)
+        border-color: var(--bike-hiit-accent)
+
+      .bike-hiit__step-label
+        opacity: 0.7
+
+      &::after
+        background: var(--bike-hiit-accent)
+
+    &--active
+      .bike-hiit__step-marker
+        transform: scale(1.15)
+        border-color: var(--bike-hiit-accent)
+
+      .bike-hiit__step-label
+        color: var(--bike-hiit-accent)
+
+      &::after
+        background: linear-gradient(180deg, var(--bike-hiit-accent), var(--bike-hiit-accent-soft))
+
+  &__step-marker
+    width: 18px
+    height: 18px
+    border-radius: 50%
+    border: 4px solid rgba(255, 255, 255, 0.3)
+    background: var(--background-color)
+    position: relative
+    z-index: 1
+    margin-top: 2px
+
+  &__step-body
+    min-width: 0
+
+  &__step-line
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    gap: 12px
+    @include tablets-and-down
+      flex-direction: column
+
+  &__step-label
+    margin: 0
+    font-weight: 700
+
+  &__step-meta
+    margin: 6px 0 0
+    color: rgba(255, 255, 255, 0.65)
+    font-size: 0.9rem
+
+  &__countdown
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    padding: 4px 8px
+    border-radius: 999px
+    background: #d64545
+    color: #fff
+    font-family: monospace
+    font-size: 0.8rem
+    font-weight: 700
+
+.is-hidden
+  display: none

@@ -1,0 +1,256 @@
+---
+---
+{% include i18n/i18n %}
+
+<!DOCTYPE html>
+<html lang="{{ locale.lang }}" {% if locale.direction == 'rtl' %}dir="rtl"{% endif %}>
+
+{% include head.html %}
+
+<body>
+  <main>
+    {% include header.html %}
+
+    <div class="base-container">
+      <div class="base-background">
+        <section class="bike-hiit">
+          <h1 class="base-title">{{ page.title }}</h1>
+
+          {% if page.description %}
+          <p class="bike-hiit__description">{{ page.description }}</p>
+          {% endif %}
+
+          {{ content }}
+
+          <div class="bike-hiit__tabs" role="tablist" aria-label="{{ page.title }}">
+            {% for workout in page.workouts %}
+            <button
+              type="button"
+              class="bike-hiit__tab{% if forloop.first %} bike-hiit__tab--active{% endif %}"
+              data-bike-hiit-tab="{{ forloop.index0 }}"
+              role="tab"
+              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
+              {{ workout.name }}
+            </button>
+            {% endfor %}
+          </div>
+
+          <div class="bike-hiit__panels">
+            {% for workout in page.workouts %}
+            {% assign total_minutes = 0 %}
+            {% for step in workout.steps %}
+              {% assign total_minutes = total_minutes | plus: step.duration %}
+            {% endfor %}
+            <article
+              id="bike-hiit-panel-{{ forloop.index0 }}"
+              class="bike-hiit__panel{% if forloop.first %} bike-hiit__panel--active{% endif %}"
+              data-bike-hiit-panel="{{ forloop.index0 }}"
+              role="tabpanel">
+              <div class="bike-hiit__panel-header">
+                <div>
+                  <h2 class="bike-hiit__panel-title">{{ workout.title }}</h2>
+                  {% if workout.summary %}
+                  <p class="bike-hiit__panel-summary">{{ workout.summary }}</p>
+                  {% endif %}
+                </div>
+
+                <div class="bike-hiit__panel-actions">
+                  <span class="bike-hiit__timer is-hidden" id="bike-hiit-timer-{{ forloop.index0 }}">00:00</span>
+                  <span class="bike-hiit__badge">{{ total_minutes }} min</span>
+                  <button
+                    type="button"
+                    class="bike-hiit__toggle"
+                    data-bike-hiit-toggle="{{ forloop.index0 }}"
+                    aria-label="Start or pause {{ workout.title }}">
+                    <img
+                      id="bike-hiit-play-{{ forloop.index0 }}"
+                      class="bike-hiit__toggle-icon"
+                      src="{{ site.baseurl }}/assets/icons/svgs/solid/play.svg"
+                      alt="">
+                    <img
+                      id="bike-hiit-pause-{{ forloop.index0 }}"
+                      class="bike-hiit__toggle-icon is-hidden"
+                      src="{{ site.baseurl }}/assets/icons/svgs/solid/pause.svg"
+                      alt="">
+                  </button>
+                </div>
+              </div>
+
+              <ol class="bike-hiit__steps" id="bike-hiit-steps-{{ forloop.index0 }}"></ol>
+            </article>
+            {% endfor %}
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const workouts = {{ page.workouts | jsonify }};
+
+      const state = workouts.map(function () {
+        return {
+          running: false,
+          elapsed: 0,
+          interval: null
+        };
+      });
+
+      function buildStepTimes(steps) {
+        let cursor = 0;
+        return steps.map(function (step) {
+          const start = cursor;
+          const end = cursor + step.duration;
+          cursor = end;
+
+          return Object.assign({}, step, {
+            start: start * 60,
+            end: end * 60
+          });
+        });
+      }
+
+      const workoutSteps = workouts.map(function (workout) {
+        return buildStepTimes(workout.steps);
+      });
+
+      function formatTime(seconds) {
+        const minutes = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const secs = String(seconds % 60).padStart(2, '0');
+        return minutes + ':' + secs;
+      }
+
+      function renderSteps(tabIndex) {
+        const list = document.getElementById('bike-hiit-steps-' + tabIndex);
+        const steps = workoutSteps[tabIndex];
+        const elapsed = state[tabIndex].elapsed;
+
+        list.innerHTML = '';
+
+        steps.forEach(function (step) {
+          const done = elapsed >= step.end;
+          const active = elapsed >= step.start && elapsed < step.end;
+          const item = document.createElement('li');
+          const remaining = active ? step.end - elapsed : 0;
+
+          item.className = 'bike-hiit__step';
+
+          if (done) {
+            item.classList.add('bike-hiit__step--done');
+          }
+
+          if (active) {
+            item.classList.add('bike-hiit__step--active');
+          }
+
+          item.innerHTML =
+            '<div class="bike-hiit__step-marker"></div>' +
+            '<div class="bike-hiit__step-body">' +
+              '<div class="bike-hiit__step-line">' +
+                '<p class="bike-hiit__step-label">' + step.label + '</p>' +
+                (active ? '<span class="bike-hiit__countdown">' + formatTime(remaining) + '</span>' : '') +
+              '</div>' +
+              '<p class="bike-hiit__step-meta">' +
+                formatTime(step.start) + ' - ' + formatTime(step.end) + ' | ' + step.duration + ' min' +
+              '</p>' +
+            '</div>';
+
+          list.appendChild(item);
+        });
+      }
+
+      function syncToggleIcon(tabIndex) {
+        const playIcon = document.getElementById('bike-hiit-play-' + tabIndex);
+        const pauseIcon = document.getElementById('bike-hiit-pause-' + tabIndex);
+
+        if (state[tabIndex].running) {
+          playIcon.classList.add('is-hidden');
+          pauseIcon.classList.remove('is-hidden');
+        } else {
+          playIcon.classList.remove('is-hidden');
+          pauseIcon.classList.add('is-hidden');
+        }
+      }
+
+      function tick(tabIndex) {
+        const workoutState = state[tabIndex];
+        const timer = document.getElementById('bike-hiit-timer-' + tabIndex);
+        const totalSeconds = workoutSteps[tabIndex][workoutSteps[tabIndex].length - 1].end;
+
+        if (workoutState.elapsed >= totalSeconds) {
+          clearInterval(workoutState.interval);
+          workoutState.interval = null;
+          workoutState.running = false;
+          syncToggleIcon(tabIndex);
+          renderSteps(tabIndex);
+          return;
+        }
+
+        workoutState.elapsed += 1;
+        timer.textContent = formatTime(workoutState.elapsed);
+        renderSteps(tabIndex);
+      }
+
+      function toggleTimer(tabIndex) {
+        const workoutState = state[tabIndex];
+        const timer = document.getElementById('bike-hiit-timer-' + tabIndex);
+        const totalSeconds = workoutSteps[tabIndex][workoutSteps[tabIndex].length - 1].end;
+
+        if (workoutState.running) {
+          clearInterval(workoutState.interval);
+          workoutState.interval = null;
+          workoutState.running = false;
+          syncToggleIcon(tabIndex);
+          return;
+        }
+
+        if (workoutState.elapsed >= totalSeconds) {
+          workoutState.elapsed = 0;
+          timer.textContent = '00:00';
+          renderSteps(tabIndex);
+        }
+
+        timer.classList.remove('is-hidden');
+        workoutState.running = true;
+        syncToggleIcon(tabIndex);
+        workoutState.interval = window.setInterval(function () {
+          tick(tabIndex);
+        }, 1000);
+      }
+
+      function showTab(tabIndex) {
+        document.querySelectorAll('[data-bike-hiit-tab]').forEach(function (tabElement) {
+          const isActive = Number(tabElement.getAttribute('data-bike-hiit-tab')) === tabIndex;
+          tabElement.classList.toggle('bike-hiit__tab--active', isActive);
+          tabElement.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        document.querySelectorAll('[data-bike-hiit-panel]').forEach(function (panelElement) {
+          const isActive = Number(panelElement.getAttribute('data-bike-hiit-panel')) === tabIndex;
+          panelElement.classList.toggle('bike-hiit__panel--active', isActive);
+        });
+      }
+
+      workouts.forEach(function (_, index) {
+        renderSteps(index);
+        syncToggleIcon(index);
+
+        const toggleButton = document.querySelector('[data-bike-hiit-toggle="' + index + '"]');
+        const tabButton = document.querySelector('[data-bike-hiit-tab="' + index + '"]');
+
+        toggleButton.addEventListener('click', function () {
+          toggleTimer(index);
+        });
+
+        tabButton.addEventListener('click', function () {
+          showTab(index);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

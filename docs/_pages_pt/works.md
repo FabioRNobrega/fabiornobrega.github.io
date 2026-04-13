@@ -1,63 +1,71 @@
 ---
 layout: works
 title: Projetos
-description: Uma seleção de coisas que desenvolvi, ilustrei ou criei.
+description: Uma seleção de projetos de software, tecnologia criativa e experiências interativas que desenvolvi ao longo dos anos.
 document_id: works
 works: 
   - type: 
-    title: Web Developer
+    title: Engenharia de Software
     collection:
       - title: Pathfinder by LOTSGroup
-        description: Construindo a espinha dorsal do ecossistema de logística sustentável do futuro.
-        continue: See more
+        description: Uma plataforma digital voltada para a construção da próxima geração de operações logísticas sustentáveis.
+        continue: Ver mais
         url: https://pathfinder.lotsgroup.com
         image: works/pathfinder.png
       - title: Stone Co  
-        description: Solução completa para vendas, gestão e crédito — maquininha, Pix, boletos e conta PJ em um só lugar.  
+        description: Uma plataforma completa para pagamentos, gestão e serviços financeiros, com maquininha, Pix, cobrança e conta PJ em um só lugar.
         continue: Ver mais  
         url: https://www.stone.com.br/produtos-stone/
         image: works/stoneco.png
 
       - title: Lemoney Open Cashback  
-        description: Cashback como serviço para qualquer aplicação via LemoneyWay.  
+        description: Uma solução de cashback como serviço pensada para integração com diferentes produtos e jornadas digitais.
         continue: Ver mais  
         url: https://lemoneyway.com/opencashback/en/  
         image: works/opencashback.jpeg  
 
       - title: Phoenix LiveView Web Message  
-        description: Exemplo simples de chat web usando Elixir e Phoenix LiveView.  
+        description: Um exemplo enxuto de chat web desenvolvido com Elixir e Phoenix LiveView.
         continue: Ver mais  
         url: https://github.com/FabioRNobrega/elixir-phoenix-liveview-messenger-example  
         image: works/phoenix.png  
   - type: 
-    title: Arte Digital/Electronica
+    title: Arte Digital e Eletrônica
     collection: 
       - title: Livro Sonoro 
-        description: Esse é o repositorio para o projeto Livro Sonoro  
-        continue: Veja mais
+        description: Código-fonte de um projeto de arte interativa voltado para som, sensores e experimentação física.
+        continue: Ver mais
         url: https://github.com/FabioRNobrega/SparkFunMP3-with-light-sensor
         image: works/arduino.jpg
       - title: The Journey Unseen
-        description: Esse é o repositorio para o projeto The Journey Unseen. 
-        continue: Veja Mais 
+        description: Código-fonte de um projeto experimental e interativo desenvolvido a partir de narrativa, percepção e mídia digital.
+        continue: Ver mais
         url: https://github.com/FabioRNobrega/The-Journey-Unseen
         image: works/arduino.jpg
       - title: Desculpe, eu estava ocupada...
-        description: Esse é o repositorio para o projeto  Desculpe, eu estava ocupada... 
-        continue: Veja Mais 
+        description: Código-fonte de uma obra de arte eletrônica que combina hardware simples com uma proposta mais expressiva e narrativa.
+        continue: Ver mais
         url: https://github.com/FabioRNobrega/Led-LDR-with-buzzer
         image: works/arduino.jpg
       - title: Portfólio Arte Digital
-        description: Esse é um portifólio com algumas obras elaboradas por mim. 
-        continue: Veja Mais 
+        description: Um portfólio com uma seleção de trabalhos visuais e experimentos desenvolvidos por mim.
+        continue: Ver mais
         url: https://fabiornobrega.github.io/pt/portfolio-arte-digital/
         image: works/arduino.jpg
   - type: 
-    title: Games
+    title: Jogos
     collection: 
       - title: Memory
-        description: Esse é um game desenvolvido em Unity com o objetivo de aprender como o mesmo funciona
-        continue: Veja Mais 
+        description: Um pequeno jogo em Unity criado como parte do meu processo prático de aprendizado em desenvolvimento de games.
+        continue: Ver mais
         url: https://github.com/FabioRNobrega/memory
         image: works/unity.jpeg
+  - type: 
+    title: Pequenas Ferramentas Web
+    collection: 
+      - title: Bike Hiit Trainer  
+        description: Um auxiliar de treino com diferentes rotinas de bike HIIT, timer e acompanhamento passo a passo.
+        continue: Ver mais
+        url: /pt/bike-hiit/
+        image: works/bike-hiit-trainer.png
 ---
