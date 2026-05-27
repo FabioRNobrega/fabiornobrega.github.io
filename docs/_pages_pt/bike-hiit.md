@@ -64,6 +64,66 @@ workouts:
         duration: 1
       - label: Finalize leve
         duration: 1
+  - name: Opção 4
+    title: HIIT Bike Opção 4
+    summary: "Blocos de alta intensidade repetidos 4 vezes (3–5 recomendado): subida forte, sprint e recuperação curtos."
+    steps:
+      - label: Aquecimento leve
+        duration: 3
+      - label: "Subida forte (bloco 1/4)"
+        duration: 2
+      - label: "Sprint leve (bloco 1/4)"
+        duration: 0.75
+      - label: "Recuperação (bloco 1/4)"
+        duration: 0.5
+      - label: "Subida forte (bloco 2/4)"
+        duration: 2
+      - label: "Sprint leve (bloco 2/4)"
+        duration: 0.75
+      - label: "Recuperação (bloco 2/4)"
+        duration: 0.5
+      - label: "Subida forte (bloco 3/4)"
+        duration: 2
+      - label: "Sprint leve (bloco 3/4)"
+        duration: 0.75
+      - label: "Recuperação (bloco 3/4)"
+        duration: 0.5
+      - label: "Subida forte (bloco 4/4)"
+        duration: 2
+      - label: "Sprint leve (bloco 4/4)"
+        duration: 0.75
+      - label: "Recuperação (bloco 4/4)"
+        duration: 0.5
+      - label: Desaquecimento leve
+        duration: 4
+  - name: Opção 5
+    title: HIIT Bike Opção 5
+    summary: Sprint progressivo em dois ciclos — primeiro ciclo todo sentado, segundo ciclo alternando em pé e sentado para aumentar a intensidade.
+    steps:
+      - label: Sprint leve sentado
+        duration: 2
+      - label: Sprint moderado sentado
+        duration: 1
+      - label: Descanso com pedalada normal
+        duration: 2
+      - label: Sprint leve sentado
+        duration: 2
+      - label: Sprint forte sentado
+        duration: 2
+      - label: Descanso leve
+        duration: 2
+      - label: Sprint leve em pé
+        duration: 2
+      - label: Sprint moderado sentado
+        duration: 1
+      - label: Descanso com pedalada normal
+        duration: 2
+      - label: Sprint leve em pé
+        duration: 2
+      - label: Sprint forte sentado
+        duration: 2
+      - label: Descanso leve
+        duration: 2
 ---
 
 Escolha uma das opções abaixo para o seu treino de bike HIIT. Cada aba traz uma estrutura diferente de intensidade, com timer ao vivo e contagem regressiva em cada etapa para ajudar você a manter o ritmo.
