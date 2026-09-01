@@ -1,6 +1,7 @@
 @import "_mixins"
 
 .highlight
+  position: relative
   background: var(--code-background)
   padding: 3px
   border-radius: 5px
@@ -177,6 +178,59 @@ pre, code
 
   @include tablets-and-down
     font-size: 11px
+
+.code-block
+  position: relative
+
+  pre
+    padding: 14px
+    padding-top: 44px
+
+  &__copy
+    position: absolute
+    top: 8px
+    right: 8px
+    z-index: 1
+    display: inline-flex
+    align-items: center
+    gap: 6px
+    min-height: 28px
+    padding: 5px 9px
+    border: 1px solid var(--border-color)
+    border-radius: 5px
+    background: var(--lighter-background-color)
+    color: var(--text-color)
+    cursor: pointer
+    font-family: var(--font-family-base)
+    font-size: 12px
+    font-weight: 700
+    line-height: 1
+    opacity: .85
+    transition: opacity .2s ease, color .2s ease, border-color .2s ease
+
+    &:hover,
+    &:focus
+      color: var(--primary-color)
+      border-color: var(--primary-color)
+      opacity: 1
+      outline: none
+
+    &--success
+      color: var(--primary-color)
+      border-color: var(--primary-color)
+
+    &--error
+      color: #e48383
+      border-color: #e48383
+
+  @include tablets-and-down
+    pre
+      padding-top: 40px
+
+    &__copy
+      min-height: 26px
+      padding: 5px 7px
+      font-size: 11px
 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure
   margin-bottom: 15px
